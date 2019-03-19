@@ -1,7 +1,7 @@
 % cs653, data mining, HA3. 
 % This routine is used to apply the Support Vector machine (SVM)
 % method to predict if a flower is 'setosa', i.e. label 1 in the matrix X(:,5). 
-
+clear;
 % 
 CM=zeros(3,3); %confusion matrix; 
 acc=0; % accuracy
@@ -17,13 +17,10 @@ D=randperm(150);
 trX=X(D(1:100), 1:4); %training samples
 trY=X(D(1:100), 5); % training labels;
 trY(find(trY~=1))=-1; % change any other class to be -1;    
-% trY(find(trY~=1))=2; % change any other class to be 2; 
 
 teX=X(D(101:end), 1:4); %teting samples; 
 teY=X(D(101:end),5); %testing labels;
 teY(find(teY~=1))=-1;% change any other class to be -1;    
-% teY(find(teY~=1))= 2; % change any other class to be 2; 
-
 %% Training & Testing	
 
 % Please test linear SVM (default option of fitcsvm) and non-linear SVM with RBF kernel.  
@@ -38,7 +35,6 @@ SVMModel = fitcsvm(trX,trY);
 % [~,score] = predict(SVMModel,teX);
 hatY = predict(SVMModel,teX);
 
-
 %% 3.	Compute confusion matrix and various metrics
 % including accuracy, and per-class recall/precision rates. 
 
@@ -49,3 +45,9 @@ hatY = predict(SVMModel,teX);
 %output 
 %confuction matrix, accuracy, per-class recall rate,
 %per-class prediction rate. 
+
+
+%% Using RBF
+SVMModel_RBF = fitcsvm(trX,trY, 'KernelFunction','RBF','KernelScale','auto');
+hatY = predict(SVMModel_RBF,teX);
+[CM_RBF, acc_RBF, arrR_RBF, arrP_RBF]=func_confusion_matrix(teY, hatY);

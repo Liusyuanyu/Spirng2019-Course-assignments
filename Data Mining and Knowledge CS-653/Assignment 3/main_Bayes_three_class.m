@@ -62,6 +62,7 @@ p_class3 = size(virginica,1)/size(trX,1);
 % p_x1_class1 = 1/(sqrt(2*pi)*sqrt(arrV(1,1)))*exp(-(sample_X(1,1)-arrM(1,1))^2/(2*arrV(1,1)));
 % p_x1_class2 = 1/(sqrt(2*pi)*sqrt(arrV(2,1)))*exp(-(sample_X(1,1)-arrM(2,1))^2/(2*arrV(2,1)));
 % p_x1_class3 = 1/(sqrt(2*pi)*sqrt(arrV(3,1)))*exp(-(sample_X(1,1)-arrM(3,1))^2/(2*arrV(3,1)));
+
 sample_X = teX(1,:);
 p_x1_class1 = 1/(sqrt(2*pi)*sqrt(arrV(1,1)))*exp(-(sample_X(1)-arrM(1,1))^2/(2*arrV(1,1)));
 p_x2_class1 = 1/(sqrt(2*pi)*sqrt(arrV(1,2)))*exp(-(sample_X(2)-arrM(1,2))^2/(2*arrV(1,2)));

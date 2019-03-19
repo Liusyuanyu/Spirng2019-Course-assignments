@@ -30,7 +30,7 @@ cIdx = [];
 for ind = 1:size(teX,1)
     sub_all_train = (trX - teX(ind,:));
     distances = sqrt( sum( (sub_all_train').^2 ) )';
-    [M,candidate_ind] = mink(distances,K);
+    [~,candidate_ind] = mink(distances,K);
     cIdx = [cIdx;candidate_ind'];
 end
 
@@ -42,7 +42,7 @@ for ind =1 : size(cIdx,1)
     candidate_count(1) = size(find(candidate == 1),1);
     candidate_count(2) = size(find(candidate == 2),1);
     candidate_count(3) = size(find(candidate == 3),1);
-    [M,I] = max(candidate_count);
+    [~,I] = max(candidate_count);
     hatY(ind,:) = I;
 end
 
