@@ -21,11 +21,9 @@ accidentData = table(weather_good, weather_bad, driver_sober, driver_alcohol, vi
     belt_no, belt_yes, severity_major, severity_minor);
 
 %% Get frequent itemsets
-% accidentTable =accidentData;
 allkeys = accidentData.Properties.VariableNames';
 % minsup = 3: 7x3 ;;; 2: 1x5 ;
 minsup = 2;
-
 [freqitemsets,Itemsets] = getFreqItemsets(accidentData,allkeys,minsup);
 
 %% Display all frequent itemsets.
@@ -74,8 +72,6 @@ end
 function [freqitemsets,Itemsets] = getFreqItemsets(accidentData,allkeys, minsup)
     freqitemsets = {};
     Itemsets = {};
-%     Itemsets = [];
-    supports = [];
     maxitems = size(allkeys,1);
     column_ind = 1:maxitems;
     prune_itemsets = {-1};
@@ -162,7 +158,7 @@ function [TF,support] = checkNumber(accidentData,itemset, minsup)
         end
     end
 end
-%% My functions: Apriori algorithm
+%% My functions: Apriori algorithm for rule generation
 function Rules = Apriori_Generate_rules(freqitemsets, Itemsets,confidence)
     Rules = [];
     for ind = 1:size(freqitemsets,1)      
@@ -196,8 +192,6 @@ function rules = Rulepruning(afreqitemset,conseqs,Itemsets,confidence,rules)
         subitemsfind = false;
         freqsetfind = false;
         
-        len = length(Itemsets);
-        
         for ii = 1:length(Itemsets)
             
             if isequal(Itemsets{ii,1}, subitems)
@@ -222,61 +216,6 @@ function rules = Rulepruning(afreqitemset,conseqs,Itemsets,confidence,rules)
                 rules = {subitems,a_conseq };
             else
                 rules = [rules; {subitems,a_conseq }];
-            end             
-        end
-    end
-end
-
-
-function Rules = Apriori_Generate_rules_old(freqitemsets_ind, supports,confidence)
-    Rules = [];
-    for ind = 1:length(freqitemsets_ind)
-        k_num  = length(freqitemsets_ind{ind});
-        if k_num >=2
-            freqitemset = freqitemsets_ind{ind};
-            
-            for conseq_num = 1:k_num-1
-                if conseq_num ==2
-                end
-                conseq = combnk(freqitemset,conseq_num);
-                Rules = Rulepruning_old(freqitemset,freqitemsets_ind,conseq,supports,confidence,Rules);
-            end
-        end
-    end
-end
-
-function rules = Rulepruning_old(freqitemset,Freqitemsets_ind,conq,Support,confidence,rules)
-    for ind = 1:size(conq,1)
-        conseq = conq(ind,:);
-        subitems = setdiff(freqitemset, conseq);
-        
-        supfreq = 1;
-        supsub = 1;
-        subitemsfind = false;
-        freqsetfind = false;
-        for ii = 1:length(Freqitemsets_ind)
-            if isequal(Freqitemsets_ind{ii}, subitems)
-                supsub =Support(ii);
-                subitemsfind = true;
-            end
-            
-            if isequal(Freqitemsets_ind{ii}, freqitemset)
-                supfreq =Support(ii);
-                freqsetfind = true;
-            end
-            
-            if subitemsfind && freqsetfind
-                break;
-            end
-        end
-        
-        conf = supfreq / supsub;
-
-        if conf >= confidence
-            if isempty(rules)
-                rules = {subitems,conseq };
-            else
-                rules = [rules; {subitems,conseq }];
             end             
         end
     end
