@@ -1,0 +1,3 @@
+light
+road line
+window

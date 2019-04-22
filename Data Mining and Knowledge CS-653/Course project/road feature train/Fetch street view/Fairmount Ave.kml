@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name><![CDATA[Directions from 4159 Fairmount Ave, San Diego, CA 92105, USA to Fairmount Av & Landis St, San Diego, CA 92105, USA]]></name>
+    <Style id="icon-1899-DB4436-nodesc-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-DB4436-nodesc-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-DB4436-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-DB4436-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-DB4436-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-1267FF-5000-nodesc-normal">
+      <LineStyle>
+        <color>ffff6712</color>
+        <width>5</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-1267FF-5000-nodesc-highlight">
+      <LineStyle>
+        <color>ffff6712</color>
+        <width>7.5</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-1267FF-5000-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-1267FF-5000-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-1267FF-5000-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name><![CDATA[Directions from 4159 Fairmount Ave, San Diego, CA 92105, USA to Fairmount Av & Landis St, San Diego, CA 92105, USA]]></name>
+      <styleUrl>#line-1267FF-5000-nodesc</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          -117.10088,32.75243,0
+          -117.10089,32.75143,0
+          -117.10089,32.75082,0
+          -117.1009,32.75073,0
+          -117.1009,32.75035,0
+          -117.10091,32.75004,0
+          -117.10092,32.74963,0
+          -117.10093,32.74929,0
+          -117.10093,32.74922,0
+          -117.10093,32.74873,0
+          -117.10093,32.74838,0
+          -117.10093,32.74814,0
+          -117.10093,32.74808,0
+          -117.10093,32.7479,0
+          -117.10093,32.74775,0
+          -117.10094,32.74749,0
+          -117.10094,32.74732,0
+          -117.10094,32.74702,0
+          -117.10094,32.74698,0
+          -117.10094,32.74662,0
+          -117.10094,32.74617,0
+          -117.10095,32.74596,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>4159 Fairmount Ave, San Diego, CA 92105, USA</name>
+      <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.1008841,32.7524318,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>4061 Fairmount Ave, San Diego, CA 92105, USA</name>
+      <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.1008947,32.7508215,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>3808 Fairmount Ave, San Diego, CA 92105, USA</name>
+      <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.1009269,32.7480844,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Fairmount Av & Landis St, San Diego, CA 92105, USA]]></name>
+      <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.100947,32.7459615,0
+        </coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

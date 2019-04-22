@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>Euclid_Ave1.jpg</filename>
+	<path>D:\Courses\Data Mining and Knowledge CS-653\Road_feature_train\images\Euclid_Ave1.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>light</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>566</xmin>
+			<ymin>5</ymin>
+			<xmax>640</xmax>
+			<ymax>40</ymax>
+		</bndbox>
+	</object>
+</annotation>

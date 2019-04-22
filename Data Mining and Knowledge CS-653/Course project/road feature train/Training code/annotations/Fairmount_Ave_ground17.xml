@@ -1,0 +1,38 @@
+<annotation>
+	<folder>images</folder>
+	<filename>Fairmount_Ave_ground17.jpg</filename>
+	<path>D:\Courses\Data Mining and Knowledge CS-653\Road_feature_train\images\Fairmount_Ave_ground17.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>road line</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>388</xmin>
+			<ymin>161</ymin>
+			<xmax>478</xmax>
+			<ymax>289</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>road line</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>490</xmin>
+			<ymin>145</ymin>
+			<xmax>532</xmax>
+			<ymax>169</ymax>
+		</bndbox>
+	</object>
+</annotation>

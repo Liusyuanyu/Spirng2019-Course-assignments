@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>Fifth_Ave_ground20.jpg</filename>
+	<path>D:\Courses\Data Mining and Knowledge CS-653\Road_feature_train\images\Fifth_Ave_ground20.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>road line</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>103</xmin>
+			<ymin>367</ymin>
+			<xmax>187</xmax>
+			<ymax>451</ymax>
+		</bndbox>
+	</object>
+</annotation>

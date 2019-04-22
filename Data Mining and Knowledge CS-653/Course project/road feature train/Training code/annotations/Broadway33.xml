@@ -1,0 +1,38 @@
+<annotation>
+	<folder>images</folder>
+	<filename>Broadway33.jpg</filename>
+	<path>D:\Courses\Data Mining and Knowledge CS-653\Road_feature_train\images\Broadway33.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>light</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>569</xmin>
+			<ymin>330</ymin>
+			<xmax>599</xmax>
+			<ymax>345</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>light</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>4</xmin>
+			<ymin>271</ymin>
+			<xmax>29</xmax>
+			<ymax>298</ymax>
+		</bndbox>
+	</object>
+</annotation>

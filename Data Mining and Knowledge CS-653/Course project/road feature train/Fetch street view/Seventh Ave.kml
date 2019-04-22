@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Directions from 1100, 707 Broadway, San Diego, CA 92101, USA to 393 Seventh Ave, San Diego, CA 92101, USA</name>
+    <Style id="icon-1899-DB4436-nodesc-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-DB4436-nodesc-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-DB4436-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-DB4436-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-DB4436-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-1267FF-5000-nodesc-normal">
+      <LineStyle>
+        <color>ffff6712</color>
+        <width>5</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-1267FF-5000-nodesc-highlight">
+      <LineStyle>
+        <color>ffff6712</color>
+        <width>7.5</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-1267FF-5000-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-1267FF-5000-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-1267FF-5000-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>Directions from 1100, 707 Broadway, San Diego, CA 92101, USA to 393 Seventh Ave, San Diego, CA 92101, USA</name>
+      <styleUrl>#line-1267FF-5000-nodesc</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          -117.15834,32.71558,0
+          -117.15834,32.71512,0
+          -117.15834,32.71469,0
+          -117.15834,32.71452,0
+          -117.15833,32.71428,0
+          -117.15832,32.71363,0
+          -117.15832,32.71332,0
+          -117.15831,32.71257,0
+          -117.15831,32.71212,0
+          -117.1583,32.71155,0
+          -117.1583,32.71146,0
+          -117.15829,32.71076,0
+          -117.15829,32.71044,0
+          -117.15829,32.71016,0
+          -117.15829,32.70999,0
+          -117.15829,32.7094,0
+          -117.15829,32.70916,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>1100, 707 Broadway, San Diego, CA 92101, USA</name>
+      <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.1583394,32.7155814,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>751 Seventh Ave, San Diego, CA 92101, USA</name>
+      <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.1583171,32.7133202,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>439 Sixth Ave, San Diego, CA 92101, USA</name>
+      <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.1582905,32.7101557,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>441 Seventh Ave, San Diego, CA 92101, USA</name>
+      <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.1582899,32.7099866,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>393 Seventh Ave, San Diego, CA 92101, USA</name>
+      <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.1582854,32.7091607,0
+        </coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

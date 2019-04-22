@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name><![CDATA[Directions from Broadway & Kettner Bl, San Diego, CA 92101, USA to Broadway & 15th St, San Diego, CA 92101, USA]]></name>
+    <Style id="icon-1899-DB4436-nodesc-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-DB4436-nodesc-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-DB4436-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-DB4436-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-DB4436-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-1267FF-5000-nodesc-normal">
+      <LineStyle>
+        <color>ffff6712</color>
+        <width>5</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-1267FF-5000-nodesc-highlight">
+      <LineStyle>
+        <color>ffff6712</color>
+        <width>7.5</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-1267FF-5000-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-1267FF-5000-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-1267FF-5000-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name><![CDATA[Directions from Broadway & Kettner Bl, San Diego, CA 92101, USA to Broadway & 15th St, San Diego, CA 92101, USA]]></name>
+      <styleUrl>#line-1267FF-5000-nodesc</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          -117.1688,32.71565,0
+          -117.16874,32.71565,0
+          -117.16831,32.71565,0
+          -117.16741,32.71565,0
+          -117.16689,32.71565,0
+          -117.16652,32.71565,0
+          -117.16602,32.71565,0
+          -117.16555,32.71564,0
+          -117.16472,32.71562,0
+          -117.16413,32.71563,0
+          -117.1638,32.71563,0
+          -117.1632,32.71564,0
+          -117.16289,32.71564,0
+          -117.16198,32.71564,0
+          -117.16141,32.71564,0
+          -117.16109,32.71565,0
+          -117.16017,32.71566,0
+          -117.15926,32.71567,0
+          -117.15834,32.71567,0
+          -117.15744,32.71568,0
+          -117.15669,32.71568,0
+          -117.1565,32.71568,0
+          -117.15561,32.7157,0
+          -117.15539,32.7157,0
+          -117.15496,32.7157,0
+          -117.15471,32.71571,0
+          -117.1546,32.71572,0
+          -117.15399,32.71571,0
+          -117.15385,32.71572,0
+          -117.1538,32.71572,0
+          -117.15371,32.71572,0
+          -117.15359,32.71572,0
+          -117.15342,32.71575,0
+          -117.153,32.71575,0
+          -117.15285,32.71574,0
+          -117.15197,32.71575,0
+          -117.1504,32.71575,0
+          -117.15001,32.71576,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Broadway & Kettner Bl, San Diego, CA 92101, USA]]></name>
+      <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.1688022,32.7156529,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>189 West Broadway, San Diego, CA 92101, USA</name>
+      <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.1641277,32.7156318,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Broadway & 9th Av, San Diego, CA 92101, USA]]></name>
+      <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.1566882,32.7156823,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Broadway & 15th St, San Diego, CA 92101, USA]]></name>
+      <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.1500097,32.7157592,0
+        </coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

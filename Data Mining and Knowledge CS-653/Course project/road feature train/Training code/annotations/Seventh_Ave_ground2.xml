@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>Seventh_Ave_ground2.jpg</filename>
+	<path>D:\Courses\Data Mining and Knowledge CS-653\Road_feature_train\images\Seventh_Ave_ground2.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>road line</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>338</xmin>
+			<ymin>190</ymin>
+			<xmax>364</xmax>
+			<ymax>231</ymax>
+		</bndbox>
+	</object>
+</annotation>

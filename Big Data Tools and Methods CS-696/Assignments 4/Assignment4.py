@@ -58,7 +58,7 @@ def amount_donation(donation_df,output):
 
 def percentage_donation(donation_df,output):
 	import pyspark.sql.functions as sparkfun
-	ind_df = donation_df.groupBy("CMTE_ID", "ENTITY_TP").agg( sparkfun.count('CMTE_ID') ).where((sparkfun.col("CMTE_ID") == "C00575795") | (sparkfun.col("CMTE_ID") == "C00577130") |                (sparkfun.col("CMTE_ID") == "C00580100") & (sparkfun.col("ENTITY_TP") == "IND"))
+	ind_df = donation_df.groupBy("CMTE_ID", "ENTITY_TP").agg( sparkfun.count('CMTE_ID') ).where( ( (sparkfun.col("CMTE_ID") == "C00575795") | (sparkfun.col("CMTE_ID") == "C00577130") | (sparkfun.col("CMTE_ID") == "C00580100")) & (sparkfun.col("ENTITY_TP") == "IND"))
 	total_entity_df = donation_df.groupBy("CMTE_ID").agg( sparkfun.count('ENTITY_TP') ).where((sparkfun.col("CMTE_ID") == "C00575795") | (sparkfun.col("CMTE_ID") == "C00577130") |                (sparkfun.col("CMTE_ID") == "C00580100"))
 	result_3 =  ind_df.join(total_entity_df, on=["CMTE_ID"])
 	result_3 = result_3.withColumn('percentage',result_3["count(CMTE_ID)"]/result_3["count(ENTITY_TP)"] )

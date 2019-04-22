@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>30th St, San Diego, CA 92104, USA to 3409 30th St, San Diego, CA 92104, USA</name>
+    <Style id="icon-1899-DB4436-nodesc-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-DB4436-nodesc-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-DB4436-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-DB4436-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-DB4436-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-1267FF-5000-nodesc-normal">
+      <LineStyle>
+        <color>ffff6712</color>
+        <width>5</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-1267FF-5000-nodesc-highlight">
+      <LineStyle>
+        <color>ffff6712</color>
+        <width>7.5</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-1267FF-5000-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-1267FF-5000-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-1267FF-5000-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>30th St, San Diego, CA 92104, USA to 3409 30th St, San Diego, CA 92104, USA</name>
+      <styleUrl>#line-1267FF-5000-nodesc</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          -117.13009,32.74829,0
+          -117.13008,32.74808,0
+          -117.13008,32.74772,0
+          -117.13008,32.74736,0
+          -117.13008,32.74709,0
+          -117.13008,32.74699,0
+          -117.13009,32.74683,0
+          -117.13009,32.74663,0
+          -117.13008,32.74631,0
+          -117.13009,32.74596,0
+          -117.13009,32.7458,0
+          -117.13009,32.74564,0
+          -117.13009,32.74527,0
+          -117.13008,32.74492,0
+          -117.13009,32.74455,0
+          -117.13008,32.74429,0
+          -117.13008,32.74423,0
+          -117.13008,32.74391,0
+          -117.13009,32.74352,0
+          -117.13009,32.74317,0
+          -117.13009,32.74286,0
+          -117.13009,32.74266,0
+          -117.1301,32.74242,0
+          -117.1301,32.74214,0
+          -117.13009,32.74183,0
+          -117.13009,32.74162,0
+          -117.13009,32.74157,0
+          -117.1301,32.74128,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[University Av & 30th St, San Diego, CA 92104, USA]]></name>
+      <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.1300859,32.7482861,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>3786 30th St, San Diego, CA 92104, USA</name>
+      <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.1300844,32.7470896,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>3715 30th St, San Diego, CA 92104, USA</name>
+      <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.130088,32.7457967,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>3601 30th St, San Diego, CA 92104, USA</name>
+      <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.1300846,32.7442896,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>3409 30th St, San Diego, CA 92104, USA</name>
+      <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.1301018,32.7412834,0
+        </coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
