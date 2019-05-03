@@ -8,12 +8,15 @@ load('redwine.mat','X','Y'); % X, feature matrix; Y: ratings of wine samples;
 O=zeros(size(Y)); % outlier labels. 1: outliers; 0: normal; 
 O(Y>=8 | Y<=3)=1; %labeled as outliers
 
-outlier = find(O==1);
 %% step 2: Please use Nearest Neighbor methods to determine outliners. 
+for ind = 1:size(X,2)
+    X(:,ind)=X(:,ind)./norm(X(:,ind));
+end
 
-Distance = 40;
-K_value = 25;
-p = 12;
+% Distance = 40;
+Distance = 0.034;
+K_value = 20;
+p = 10;
 topN = 28;
 
 %% approach A: Data points for which there are fewer than p neighboring points within a distance D
@@ -30,9 +33,7 @@ for ind = 1:size(X,1)
     if(size(num_large_dist,1) < p+1)
         p_fewer_pts = [p_fewer_pts;ind];
     end
-    
 end
-%%
 
 %% approach B: The top n data points whose distance to the k-th nearest neighbor is greatest
 partial_dist = zeros(size(O,1),1);
@@ -61,7 +62,6 @@ end
 [~,top_n_mean_ind] = maxk(partial_dist,topN);
 
 %% step 3: Evaluate and compare the detection results of the above three methods usng confusion matrix and analyze which method works the best on this particular dataset. 
-
 
 O_A=zeros(size(Y)); % outlier labels. 1: outliers; 0: normal; 
 O_A(p_fewer_pts)=1; %labeled as outliers
