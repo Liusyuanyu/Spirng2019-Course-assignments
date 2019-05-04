@@ -3,6 +3,8 @@ import cv2
 
 def mergeoverlaylabel(label_result):
     final_result =[]
+    if not label_result:
+        return final_result
     
     pre_temp = {'label': label_result[0]['label'], 'confidence': -1, 'topleft': \
                 {'x': label_result[0]['topleft']['x'], 'y': label_result[0]['topleft']['y']},\
@@ -87,7 +89,7 @@ def mergeoverlaylabel(label_result):
 
 	
 	
-def boxing(original_img, predictions,confidence):
+def boxing(original_img, predictions,confidence= 0.1):
 	newImage = np.copy(original_img)
 
 	for result in predictions:
@@ -98,12 +100,9 @@ def boxing(original_img, predictions,confidence):
 		btm_y = result['bottomright']['y']
 
 		conf = result['confidence']
-		label = result['label'] + " " + str(round(confidence, 3))
+		label = result['label'] + " " + str(round(conf, 3))
 
-		#         if conf > 0.3:
-		#         if conf > 0.2:
 		if conf > confidence:
-		#         if conf > 0.4:
 			newImage = cv2.rectangle(newImage, (top_x, top_y), (btm_x, btm_y), (255,0,0), 3)
 			newImage = cv2.putText(newImage, label, (top_x, top_y-5), cv2.FONT_HERSHEY_COMPLEX_SMALL , 0.8, (0, 230, 0), 1, cv2.LINE_AA)
 

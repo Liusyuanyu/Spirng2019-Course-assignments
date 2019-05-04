@@ -1,6 +1,6 @@
 import requests
 
-key = "%%%" # new key for map, route and place
+key = "AIzaSyCXFae-0HuYIW0Pqph0LiBYiSu90nSIHcE" # new key for map, route and place
 
 nearby__url = r"https://maps.googleapis.com/maps/api/place/nearbysearch/json?"
 distance_url ='https://maps.googleapis.com/maps/api/distancematrix/json?'
