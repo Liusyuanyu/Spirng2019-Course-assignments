@@ -246,15 +246,6 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>Point 120</name>
-        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            -117.1098423,32.7054922,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>Point 121</name>
         <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
         <Point>
@@ -1254,24 +1245,6 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>Point 232</name>
-        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            -117.1418155,32.7089451,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>Point 233</name>
-        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            -117.1409357,32.7089631,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>Point 234</name>
         <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
         <Point>
@@ -1592,24 +1565,6 @@
         <Point>
           <coordinates>
             -117.1287305,32.7127456,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>Point 270</name>
-        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            -117.1346896,32.7121943,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>Point 271</name>
-        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            -117.1364491,32.7121762,0
           </coordinates>
         </Point>
       </Placemark>
@@ -4305,15 +4260,6 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>Point 639</name>
-        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            -117.1141578,32.9204689,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>Point 640</name>
         <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
         <Point>
@@ -5160,15 +5106,6 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>Point 602</name>
-        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            -117.2079395,32.8100407,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>Point 603</name>
         <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
         <Point>
@@ -5444,6 +5381,69 @@
         <Point>
           <coordinates>
             -117.2516776,32.8014415,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Point 600</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -117.111613,32.7040186,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Point 601</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -117.1424428,32.7086572,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Point 602</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -117.1413109,32.7094787,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Point 603</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -117.1130123,32.9215216,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Point 604</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -117.2083644,32.8093001,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Point 605</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -117.1377889,32.7127031,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Point 606</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -117.1344989,32.7105644,0
           </coordinates>
         </Point>
       </Placemark>
