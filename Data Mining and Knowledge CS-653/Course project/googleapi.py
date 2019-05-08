@@ -1,6 +1,6 @@
 import requests
 
-key = "My_key" # new key for map, route and place
+key = "AIzaSyCXFae-0HuYIW0Pqph0LiBYiSu90nSIHcE" # new key for map, route and place
 
 nearby__url = r"https://maps.googleapis.com/maps/api/place/nearbysearch/json?"
 distance_url ='https://maps.googleapis.com/maps/api/distancematrix/json?'
@@ -15,10 +15,27 @@ def grabstreetview(location,fov=50,pitch=10,heading=0):
 	return meta_request
 
 	
-def searchnearby(location,radius,type):
+def searchnearby_radius(location,radius,type):
 	
 	parameters = {"location" : location, "radius" : radius , "key" : key, \
 	"type":type}
 	meta_request= requests.get(nearby__url, params=parameters)
 	
 	return meta_request
+ 
+def searchnearby_rank(location,type):
+	
+	parameters = {"location" : location, "rankby": "distance" , "key" : key, \
+	"type":type}
+	meta_request= requests.get(nearby__url, params=parameters)
+	
+	return meta_request
+  
+def distancebetween(location,place_id):
+	
+    place_id = "place_id:"+place_id
+    # rankby=distance
+    parameters = {"origins" : location, "destinations" : place_id , "key" : key}
+    meta_request= requests.get(distance_url, params=parameters)
+    
+    return meta_request

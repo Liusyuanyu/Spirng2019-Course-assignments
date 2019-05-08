@@ -52,9 +52,7 @@ END//
 
 DELIMITER ;
 
-CALL insert_customers('1234567890','000012','test@yahoo.com','6191234567');
-
--- ======================Products
+-- ======================Products. Second procedure
 DROP PROCEDURE IF EXISTS insert_products;
 
 DELIMITER //
@@ -169,8 +167,7 @@ BEGIN
 			INTO price_sum
     FROM receipts_to_products rtp
 		JOIN products p
-			ON rtp.Product_Id = p.Product_Id
-    WHERE receipt_id_param = rtp.receipt_id   
+			ON rtp.Product_Id = p.Product_Id AND receipt_id_param = rtp.receipt_id   
     ;
 	RETURN price_sum;
 END//
@@ -201,4 +198,46 @@ END//
 DELIMITER ;
 
 -- Test the function
-SELECT password_check('000011',2);
+SELECT sum_of_pricepassword_check('000011',2);
+
+
+/********************************************************
+* 3.	Five SQL statements*
+*********************************************************/
+-- a.	One query to summarize the data using aggregate functions.
+SELECT AVG(sum_of_price) average_sum
+FROM receipts
+;
+
+-- b.	One query to display the data. Note: the resulting output should be easy to read by an end user, 
+-- so codes should be replaced with descriptive text as appropriate and column headings should reflect 
+-- the content of the column. This query should display data from two or more tables.
+SELECT c.Customer_Id AS 'Customer ID',
+	c.e_mail AS 'E-mail',
+	ctr.Receipt_Id AS 'Receipt ID',
+    rec.sum_of_price AS 'Sum of price',
+    rec.payment_way_Id AS 'Payment',
+    rec.date AS 'Date'
+FROM customers c
+	JOIN customers_to_receipts ctr	ON c.Customer_Id = ctr.Customer_Id 
+	JOIN receipts rec ON (rec.Receipt_Id = ctr.Receipt_Id) 
+		AND rec.date BETWEEN '2019-04-14' AND '2019-04-16'
+;
+
+-- c.	One to insert data.
+INSERT INTO categories (category) 
+	VALUES (
+		'Electronic'
+        )
+;
+
+-- d.	One to delete data.
+DELETE FROM categories
+WHERE category_id = 4
+;
+
+-- e.	One to update data.
+UPDATE customers
+SET phone_number = '1234567890'
+WHERE Customer_Id = 3
+;
