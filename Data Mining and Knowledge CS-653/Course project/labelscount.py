@@ -9,7 +9,11 @@ def mergeoverlaylabel(label_result):
     pre_temp = {'label': label_result[0]['label'], 'confidence': -1, 'topleft': \
                 {'x': label_result[0]['topleft']['x'], 'y': label_result[0]['topleft']['y']},\
                 'bottomright': {'x': label_result[0]['bottomright']['x'], 'y': label_result[0]['bottomright']['y']}}
-
+    
+    current_temp = {'label': label_result[0]['label'], 'confidence': -1, 'topleft': \
+                {'x': label_result[0]['topleft']['x'], 'y': label_result[0]['topleft']['y']},\
+                'bottomright': {'x': label_result[0]['bottomright']['x'], 'y': label_result[0]['bottomright']['y']}}
+    
     merge_tf = False
     for a_result in label_result:
         merge_tf = False
@@ -81,10 +85,15 @@ def mergeoverlaylabel(label_result):
             final_result.append(pre_temp)
             pre_temp = a_result
             merge_tf = False
-            
+            # print( a_result['label'])
+        
+        current_temp = a_result
+        
     if merge_tf:
-            final_result.append(pre_temp)
-
+        final_result.append(pre_temp)
+    else:
+        final_result.append(current_temp)
+        
     return final_result
 
 	

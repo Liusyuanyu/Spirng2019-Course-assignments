@@ -1,0 +1,21 @@
+1. Download images from google drive "crime_streetview", and then put into "./dataset/crime_streetview" folder.
+
+2. Download images from google drive "safe_streetview", and then put into "./dataset/safe_streetview" folder.
+
+3. Download yolo.weight from google drive "bin", and then put into "./feature_detection/bin" folder.
+
+4. Download models from google drive "model", and then put into "./feature_detection/model" folder.
+
+Step 5~7 are the steps how do I create the dataset for my projec. It will take long time to run it and require google API key. The result has already been in the package and google drive, so you can skip the step 5~7.
+
+******
+5. Open the InteractGoogleMap_Crime.ipynb by jupyter notebook and Run All. This will create a csv file of crime points and grab street view from goolge street view by coordinate.
+
+6. Open the InteractGoogleMap_Safe.ipynb by jupyter notebook and Run All. This will create a csv file of safe points and grab street view from goolge street view by coordinate.
+
+7. Open the Detect_featureOfroad.ipynb by jupyter notebook and Rull All. This will load two models, a car detector and a window/light detector, and then start to parse each street view. The result will update the files which created at step 2&3.
+******
+
+8. Open the TrainAndPredict_risk.ipynb by jupyter notebook and Run All. This is the part of training models and getting accuracy with different situations. Also, visualize some plots for analysis
+
+Google Drive link: https://drive.google.com/drive/folders/1JSLovSyAMj-uySQigSg3ti2hsknIeBhG?usp=sharing
